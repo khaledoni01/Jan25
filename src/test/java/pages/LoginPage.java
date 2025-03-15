@@ -6,6 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import tests.BaseTest;
 import tests.LoginTest;
+import utility.Util;
 
 public class LoginPage {
 
@@ -22,8 +23,8 @@ public class LoginPage {
     WebElement loginBtn;
 
     public void login() {
-        username.sendKeys("admin");
-        password.sendKeys("admin");
+        Util.sendKeys(username, "admin ");
+        Util.sendKeys(password, " admin");
         loginBtn.click();
 
         Assert.assertEquals(BaseTest.driver.getCurrentUrl(), BaseTest.baseURL, "URL doesn't match");

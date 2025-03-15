@@ -9,7 +9,8 @@ import org.testng.annotations.BeforeMethod;
 public class BaseTest {
 
     public static WebDriver driver = null;
-    public static String baseURL = "https://nktechsolutions.com/membership-login/";
+//    public static String baseURL = "https://nktechsolutions.com/membership-login/";
+    public static String baseURL = "https://nktechsolutions.com";
 
     @BeforeMethod
     public void launchBrowser() {
@@ -18,7 +19,7 @@ public class BaseTest {
         driver.get(baseURL);
     }
 
-    @AfterMethod
+//    @AfterMethod
     public void closeBrowser() {
         driver.quit();
     }
