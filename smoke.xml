@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+
+    <test name= "Smoke Test">
+
+        <classes>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="loginTestWithInvalidCredentials" />
+                </methods>
+            </class>
+            <class name="tests.HomeTest">
+                <methods>
+                    <include name="testMenuOptions" />
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+</suite>

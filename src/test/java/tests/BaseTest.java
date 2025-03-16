@@ -10,7 +10,7 @@ public class BaseTest {
 
     public static WebDriver driver = null;
 //    public static String baseURL = "https://nktechsolutions.com/membership-login/";
-    public static String baseURL = "https://nktechsolutions.com";
+    public static String baseURL = "file:///C:/Users/Khaled%20Zaman/OneDrive/Desktop/pc_backup/NK%20TECH%20Solutions/Automation/WebPage/index.html";
 
     @BeforeMethod
     public void launchBrowser() {
