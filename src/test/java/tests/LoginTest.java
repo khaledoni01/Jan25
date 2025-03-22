@@ -6,11 +6,11 @@ import pages.LoginPage;
 
 public class LoginTest extends BaseTest {
 
-    public static void main(String[] args) {
-        String[][] arr = { {"a", "b"} };
-
-        System.out.println( arr[0].length );
-    }
+//    public static void main(String[] args) {
+//        String[][] arr = { {"a", "b"} };
+//
+//        System.out.println( arr[0].length );
+//    }
 
     @DataProvider(name="loginData")
     public static Object[][] loginTestData() {
