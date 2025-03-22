@@ -3,6 +3,8 @@
 
 <suite name="Smoke Test Suite">
 
+    <parameter name="baseURL" value="https://google.com" />
+
     <test name= "Smoke Test">
 
         <classes>

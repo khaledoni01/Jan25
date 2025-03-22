@@ -22,9 +22,9 @@ public class LoginPage {
     @FindBy(xpath = "//input[@name='swpm-login']")
     WebElement loginBtn;
 
-    public void login() {
-        Util.sendKeys(username, "admin ");
-        Util.sendKeys(password, " admin");
+    public void login(String uname, String password) {
+        Util.sendKeys(username, uname);
+        Util.sendKeys(this.password, password);
         loginBtn.click();
 
         Assert.assertEquals(BaseTest.driver.getCurrentUrl(), BaseTest.baseURL, "URL doesn't match");

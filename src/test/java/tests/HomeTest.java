@@ -6,7 +6,7 @@ import pages.LoginPage;
 
 public class HomeTest extends BaseTest {
 
-    @Test
+    @Test(groups = {"regression"})
     public void testMenuOptions() {
         HomePage homePage = new HomePage();
         homePage.selectMenu("our services");
