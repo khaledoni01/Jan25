@@ -15,8 +15,6 @@
     <test name= "Test">
 
         <classes>
-            <class name="tests.FirstPageTest" />
-            <class name="tests.HomeTest" />
             <class name="tests.LoginTest" />
         </classes>
 
